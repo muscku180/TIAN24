@@ -1,0 +1,127 @@
+* {
+    font-family: "Averia Libre", system-ui;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.principal {
+    height: 100vh; /* Altura do elemento vh = view height */
+    width: 100%;
+    position: fixed;
+}
+
+#topo {
+    height: 4px;
+    background-color:rgb(216, 198, 175) ;
+}
+
+#bg1 {
+    background-image: url(../img/exercito/52976059367_5553a963a8_k.jpg);
+    background-size: cover;
+    background-position: center middle;
+}
+#bg2{
+    background-image: url(../img/forca-aerea/f-39e.jpg);
+    background-size: cover;
+    background-position: center middle;
+}
+#bg3{
+    background-image: url(../img/marinha/54213153254_3105818858_k.jpg);
+    background-size: cover;
+    background-position: center middle;
+}
+.animacao1{
+    animation-duration: 24s;
+    animation-timing-function: linear;
+    animation-name: transicao1; /* qualquer nome */
+    animation-iteration-count: infinite; 
+    z-index: 999;
+}
+
+@keyframes transicao1 {
+   0%, 25% {
+        opacity: 100%;
+        scale: 1.1;
+    }
+    33.3%  ,91.7% {
+        opacity: 0%;
+        scale: 1;
+    }
+    100% {
+        opacity: 100%;
+        scale: 1.1;
+    }
+}
+
+.painel {
+    overflow: hidden;
+}
+
+
+
+.animacao2{
+    animation-duration: 24s;
+    animation-timing-function: linear;
+    animation-name: transicao2; /* qualquer nome */
+    animation-iteration-count: infinite; 
+    z-index: 989;
+}
+@keyframes transicao2 {
+    0%, 25% {
+         opacity: 0%;
+         scale: 1;
+     }
+     33.3%  ,58.3% {
+         opacity: 100%;
+         scale: 1;
+     }
+     66.7%, 100% {
+         opacity: 0%;
+         scale: 1;
+     }
+ }
+
+ .animacao3{
+    animation-duration: 24s;
+    animation-timing-function: linear;
+    animation-name: transicao3; /* qualquer nome */
+    animation-iteration-count: infinite; 
+    z-index: 988;
+}
+@keyframes transicao3 {
+    0%, 58.3% {
+         opacity: 0%;
+         scale: 1.1;
+     }
+     66.7%  ,91.7% {
+         opacity: 100%;
+         scale: 1;
+     }
+     100% {
+         opacity: 100%;
+         scale: 1.1;
+     }
+ }
+.menu-superior{
+    height: 100vh !important;
+    opacity: 95%;
+    background-color:rgb(185, 232, 249) ;
+    color:rgb(116, 26, 26) 
+}
+
+
+.mascara{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+
+
+
+@media (max-width: 768px) {
+    #bg1 {
+        background-image: url();
+    }
+}
